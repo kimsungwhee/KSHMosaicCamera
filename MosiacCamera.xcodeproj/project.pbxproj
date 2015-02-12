@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF24C4871A2B2581003ADEC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF24C4861A2B2581003ADEC1 /* main.m */; };
+		CF24C48A1A2B2581003ADEC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF24C4891A2B2581003ADEC1 /* AppDelegate.m */; };
+		CF24C4901A2B2581003ADEC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF24C48E1A2B2581003ADEC1 /* Main.storyboard */; };
+		CF24C4921A2B2581003ADEC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF24C4911A2B2581003ADEC1 /* Images.xcassets */; };
+		CF24C4A11A2B2581003ADEC1 /* MosiacCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF24C4A01A2B2581003ADEC1 /* MosiacCameraTests.m */; };
+		CF24C4AD1A2B25D1003ADEC1 /* KSHPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF24C4AC1A2B25D1003ADEC1 /* KSHPreviewView.m */; };
+		CF24C4BD1A2B309F003ADEC1 /* UIView+KSHAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF24C4BC1A2B309F003ADEC1 /* UIView+KSHAdditions.m */; };
+		CF24C4C01A2B51E5003ADEC1 /* KSHCaptureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF24C4BF1A2B51E5003ADEC1 /* KSHCaptureButton.m */; };
+		CF24C4C61A2B5F5F003ADEC1 /* KSHCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF24C4C51A2B5F5F003ADEC1 /* KSHCameraController.m */; };
+		CF792CD61A3D32C200CBFC4E /* KSHContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF792CD51A3D32C200CBFC4E /* KSHContextManager.m */; };
+		CFF3D2B71A3B19D000CA40CF /* KSHCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF3D2B61A3B19D000CA40CF /* KSHCameraViewController.m */; };
+		CFF3D2BB1A3C7C6300CA40CF /* KSHOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF3D2BA1A3C7C6300CA40CF /* KSHOverlayView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF24C49B1A2B2581003ADEC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF24C4791A2B2581003ADEC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF24C4801A2B2581003ADEC1;
+			remoteInfo = MosiacCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF24C4811A2B2581003ADEC1 /* MosiacCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MosiacCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF24C4851A2B2581003ADEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF24C4861A2B2581003ADEC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF24C4881A2B2581003ADEC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF24C4891A2B2581003ADEC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF24C48F1A2B2581003ADEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF24C4911A2B2581003ADEC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF24C49A1A2B2581003ADEC1 /* MosiacCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosiacCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF24C49F1A2B2581003ADEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF24C4A01A2B2581003ADEC1 /* MosiacCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MosiacCameraTests.m; sourceTree = "<group>"; };
+		CF24C4AB1A2B25D1003ADEC1 /* KSHPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSHPreviewView.h; path = Classes/Views/KSHPreviewView.h; sourceTree = "<group>"; };
+		CF24C4AC1A2B25D1003ADEC1 /* KSHPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSHPreviewView.m; path = Classes/Views/KSHPreviewView.m; sourceTree = "<group>"; };
+		CF24C4BB1A2B309F003ADEC1 /* UIView+KSHAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+KSHAdditions.h"; path = "Classes/Categories/UIView+KSHAdditions.h"; sourceTree = "<group>"; };
+		CF24C4BC1A2B309F003ADEC1 /* UIView+KSHAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+KSHAdditions.m"; path = "Classes/Categories/UIView+KSHAdditions.m"; sourceTree = "<group>"; };
+		CF24C4BE1A2B51E5003ADEC1 /* KSHCaptureButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSHCaptureButton.h; path = Classes/Views/KSHCaptureButton.h; sourceTree = "<group>"; };
+		CF24C4BF1A2B51E5003ADEC1 /* KSHCaptureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSHCaptureButton.m; path = Classes/Views/KSHCaptureButton.m; sourceTree = "<group>"; };
+		CF24C4C41A2B5F5F003ADEC1 /* KSHCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSHCameraController.h; path = Classes/Controllers/KSHCameraController.h; sourceTree = "<group>"; };
+		CF24C4C51A2B5F5F003ADEC1 /* KSHCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSHCameraController.m; path = Classes/Controllers/KSHCameraController.m; sourceTree = "<group>"; };
+		CF37A78D1A3D49A700BBF75E /* KSHImageTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSHImageTarget.h; path = Classes/Views/KSHImageTarget.h; sourceTree = "<group>"; };
+		CF792CD41A3D32C200CBFC4E /* KSHContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSHContextManager.h; path = Classes/Common/KSHContextManager.h; sourceTree = "<group>"; };
+		CF792CD51A3D32C200CBFC4E /* KSHContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSHContextManager.m; path = Classes/Common/KSHContextManager.m; sourceTree = "<group>"; };
+		CFF3D2B51A3B19D000CA40CF /* KSHCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSHCameraViewController.h; path = Classes/Controllers/KSHCameraViewController.h; sourceTree = "<group>"; };
+		CFF3D2B61A3B19D000CA40CF /* KSHCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSHCameraViewController.m; path = Classes/Controllers/KSHCameraViewController.m; sourceTree = "<group>"; };
+		CFF3D2B91A3C7C6300CA40CF /* KSHOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSHOverlayView.h; path = Classes/Views/KSHOverlayView.h; sourceTree = "<group>"; };
+		CFF3D2BA1A3C7C6300CA40CF /* KSHOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSHOverlayView.m; path = Classes/Views/KSHOverlayView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF24C47E1A2B2581003ADEC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF24C4971A2B2581003ADEC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF24C4781A2B2581003ADEC1 = {
+			isa = PBXGroup;
+			children = (
+				CF24C4831A2B2581003ADEC1 /* MosiacCamera */,
+				CF24C49D1A2B2581003ADEC1 /* MosiacCameraTests */,
+				CF24C4821A2B2581003ADEC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF24C4821A2B2581003ADEC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF24C4811A2B2581003ADEC1 /* MosiacCamera.app */,
+				CF24C49A1A2B2581003ADEC1 /* MosiacCameraTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF24C4831A2B2581003ADEC1 /* MosiacCamera */ = {
+			isa = PBXGroup;
+			children = (
+				CF792CD31A3D32A000CBFC4E /* Common */,
+				CF24C4C31A2B5F36003ADEC1 /* Controllers */,
+				CF24C4C21A2B5EE2003ADEC1 /* ViewControllers */,
+				CF24C4C11A2B5ED3003ADEC1 /* Application */,
+				CF24C4BA1A2B3049003ADEC1 /* Categories */,
+				CF24C4AA1A2B258E003ADEC1 /* Views */,
+				CF24C48E1A2B2581003ADEC1 /* Main.storyboard */,
+				CF24C4911A2B2581003ADEC1 /* Images.xcassets */,
+				CF24C4841A2B2581003ADEC1 /* Supporting Files */,
+			);
+			path = MosiacCamera;
+			sourceTree = "<group>";
+		};
+		CF24C4841A2B2581003ADEC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF24C4851A2B2581003ADEC1 /* Info.plist */,
+				CF24C4861A2B2581003ADEC1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF24C49D1A2B2581003ADEC1 /* MosiacCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF24C4A01A2B2581003ADEC1 /* MosiacCameraTests.m */,
+				CF24C49E1A2B2581003ADEC1 /* Supporting Files */,
+			);
+			path = MosiacCameraTests;
+			sourceTree = "<group>";
+		};
+		CF24C49E1A2B2581003ADEC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF24C49F1A2B2581003ADEC1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF24C4AA1A2B258E003ADEC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF24C4AB1A2B25D1003ADEC1 /* KSHPreviewView.h */,
+				CF24C4AC1A2B25D1003ADEC1 /* KSHPreviewView.m */,
+				CF24C4BE1A2B51E5003ADEC1 /* KSHCaptureButton.h */,
+				CF24C4BF1A2B51E5003ADEC1 /* KSHCaptureButton.m */,
+				CFF3D2B91A3C7C6300CA40CF /* KSHOverlayView.h */,
+				CFF3D2BA1A3C7C6300CA40CF /* KSHOverlayView.m */,
+				CF37A78D1A3D49A700BBF75E /* KSHImageTarget.h */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CF24C4BA1A2B3049003ADEC1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CF24C4BB1A2B309F003ADEC1 /* UIView+KSHAdditions.h */,
+				CF24C4BC1A2B309F003ADEC1 /* UIView+KSHAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		CF24C4C11A2B5ED3003ADEC1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CF24C4881A2B2581003ADEC1 /* AppDelegate.h */,
+				CF24C4891A2B2581003ADEC1 /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		CF24C4C21A2B5EE2003ADEC1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFF3D2B51A3B19D000CA40CF /* KSHCameraViewController.h */,
+				CFF3D2B61A3B19D000CA40CF /* KSHCameraViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF24C4C31A2B5F36003ADEC1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF24C4C41A2B5F5F003ADEC1 /* KSHCameraController.h */,
+				CF24C4C51A2B5F5F003ADEC1 /* KSHCameraController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CF792CD31A3D32A000CBFC4E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CF792CD41A3D32C200CBFC4E /* KSHContextManager.h */,
+				CF792CD51A3D32C200CBFC4E /* KSHContextManager.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF24C4801A2B2581003ADEC1 /* MosiacCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF24C4A41A2B2581003ADEC1 /* Build configuration list for PBXNativeTarget "MosiacCamera" */;
+			buildPhases = (
+				CF24C47D1A2B2581003ADEC1 /* Sources */,
+				CF24C47E1A2B2581003ADEC1 /* Frameworks */,
+				CF24C47F1A2B2581003ADEC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MosiacCamera;
+			productName = MosiacCamera;
+			productReference = CF24C4811A2B2581003ADEC1 /* MosiacCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF24C4991A2B2581003ADEC1 /* MosiacCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF24C4A71A2B2581003ADEC1 /* Build configuration list for PBXNativeTarget "MosiacCameraTests" */;
+			buildPhases = (
+				CF24C4961A2B2581003ADEC1 /* Sources */,
+				CF24C4971A2B2581003ADEC1 /* Frameworks */,
+				CF24C4981A2B2581003ADEC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF24C49C1A2B2581003ADEC1 /* PBXTargetDependency */,
+			);
+			name = MosiacCameraTests;
+			productName = MosiacCameraTests;
+			productReference = CF24C49A1A2B2581003ADEC1 /* MosiacCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF24C4791A2B2581003ADEC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = kimsungwhee.com;
+				TargetAttributes = {
+					CF24C4801A2B2581003ADEC1 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					CF24C4991A2B2581003ADEC1 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = CF24C4801A2B2581003ADEC1;
+					};
+				};
+			};
+			buildConfigurationList = CF24C47C1A2B2581003ADEC1 /* Build configuration list for PBXProject "MosiacCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF24C4781A2B2581003ADEC1;
+			productRefGroup = CF24C4821A2B2581003ADEC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF24C4801A2B2581003ADEC1 /* MosiacCamera */,
+				CF24C4991A2B2581003ADEC1 /* MosiacCameraTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF24C47F1A2B2581003ADEC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF24C4901A2B2581003ADEC1 /* Main.storyboard in Resources */,
+				CF24C4921A2B2581003ADEC1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF24C4981A2B2581003ADEC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF24C47D1A2B2581003ADEC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF24C48A1A2B2581003ADEC1 /* AppDelegate.m in Sources */,
+				CF792CD61A3D32C200CBFC4E /* KSHContextManager.m in Sources */,
+				CFF3D2B71A3B19D000CA40CF /* KSHCameraViewController.m in Sources */,
+				CF24C4C01A2B51E5003ADEC1 /* KSHCaptureButton.m in Sources */,
+				CF24C4C61A2B5F5F003ADEC1 /* KSHCameraController.m in Sources */,
+				CF24C4AD1A2B25D1003ADEC1 /* KSHPreviewView.m in Sources */,
+				CF24C4871A2B2581003ADEC1 /* main.m in Sources */,
+				CFF3D2BB1A3C7C6300CA40CF /* KSHOverlayView.m in Sources */,
+				CF24C4BD1A2B309F003ADEC1 /* UIView+KSHAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF24C4961A2B2581003ADEC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF24C4A11A2B2581003ADEC1 /* MosiacCameraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF24C49C1A2B2581003ADEC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF24C4801A2B2581003ADEC1 /* MosiacCamera */;
+			targetProxy = CF24C49B1A2B2581003ADEC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF24C48E1A2B2581003ADEC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF24C48F1A2B2581003ADEC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF24C4A21A2B2581003ADEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF24C4A31A2B2581003ADEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF24C4A51A2B2581003ADEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = MosiacCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF24C4A61A2B2581003ADEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = MosiacCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF24C4A81A2B2581003ADEC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MosiacCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MosiacCamera.app/MosiacCamera";
+			};
+			name = Debug;
+		};
+		CF24C4A91A2B2581003ADEC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MosiacCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MosiacCamera.app/MosiacCamera";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF24C47C1A2B2581003ADEC1 /* Build configuration list for PBXProject "MosiacCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF24C4A21A2B2581003ADEC1 /* Debug */,
+				CF24C4A31A2B2581003ADEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF24C4A41A2B2581003ADEC1 /* Build configuration list for PBXNativeTarget "MosiacCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF24C4A51A2B2581003ADEC1 /* Debug */,
+				CF24C4A61A2B2581003ADEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF24C4A71A2B2581003ADEC1 /* Build configuration list for PBXNativeTarget "MosiacCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF24C4A81A2B2581003ADEC1 /* Debug */,
+				CF24C4A91A2B2581003ADEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF24C4791A2B2581003ADEC1 /* Project object */;
+}

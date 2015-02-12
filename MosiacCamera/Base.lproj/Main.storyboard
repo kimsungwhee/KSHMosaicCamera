@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="KSHCameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53S-6I-GEb" userLabel="OverLayer" customClass="KSHOverlayView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fe-m1-Nen" userLabel="Footer">
+                                        <rect key="frame" x="0.0" y="483" width="320" height="85"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjo-UY-EQe" userLabel="RecordButton" customClass="KSHCaptureButton">
+                                                <rect key="frame" x="126" y="9" width="68" height="68"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="9f6-dL-SHZ"/>
+                                                    <constraint firstAttribute="width" constant="68" id="bay-vd-Psr"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="recordButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0li-Xh-2g4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPs-tU-BIv" userLabel="VideoButton">
+                                                <rect key="frame" x="8" y="21" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="8BH-TO-8Z2"/>
+                                                    <constraint firstAttribute="height" constant="44" id="oSE-Px-q5s"/>
+                                                </constraints>
+                                                <state key="normal" image="VideoButton">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxD-XM-DGL">
+                                                <rect key="frame" x="202" y="6" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="7fy-BD-Cxb"/>
+                                                    <constraint firstAttribute="width" constant="30" id="H7r-Sl-qw8"/>
+                                                </constraints>
+                                                <state key="normal" image="OnOffButton_on">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="filterEnableButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cTL-hr-wnL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsG-ET-S6R" userLabel="MenuButton">
+                                                <rect key="frame" x="268" y="21" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="OEM-uJ-Pna"/>
+                                                    <constraint firstAttribute="width" constant="44" id="sef-iv-EI0"/>
+                                                </constraints>
+                                                <state key="normal" image="MenuButton">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerY" secondItem="KPs-tU-BIv" secondAttribute="centerY" id="14Q-xZ-DrB"/>
+                                            <constraint firstItem="dxD-XM-DGL" firstAttribute="leading" secondItem="Jjo-UY-EQe" secondAttribute="trailing" constant="8" id="EtM-KW-ukd"/>
+                                            <constraint firstItem="KPs-tU-BIv" firstAttribute="leading" secondItem="5fe-m1-Nen" secondAttribute="leading" constant="8" id="SgV-fc-IeJ"/>
+                                            <constraint firstItem="dxD-XM-DGL" firstAttribute="top" secondItem="5fe-m1-Nen" secondAttribute="top" constant="6" id="YA1-Ed-6Pc"/>
+                                            <constraint firstAttribute="centerX" secondItem="Jjo-UY-EQe" secondAttribute="centerX" id="YSD-VZ-KgS"/>
+                                            <constraint firstAttribute="centerY" secondItem="dsG-ET-S6R" secondAttribute="centerY" id="ZW6-qg-7Sv"/>
+                                            <constraint firstAttribute="height" constant="85" id="b1T-Y4-gAB"/>
+                                            <constraint firstAttribute="trailing" secondItem="dsG-ET-S6R" secondAttribute="trailing" constant="8" id="cAN-2G-bkQ"/>
+                                            <constraint firstAttribute="centerY" secondItem="Jjo-UY-EQe" secondAttribute="centerY" id="spB-7B-nnf"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIT-BQ-udY" userLabel="FlashButton">
+                                        <rect key="frame" x="8" y="8" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="04t-4X-SOT"/>
+                                            <constraint firstAttribute="width" constant="44" id="sQg-KG-f8A"/>
+                                        </constraints>
+                                        <state key="normal" image="SwitchFlash_off">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="switchFlashButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vMO-rm-lKt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOj-yD-7yZ">
+                                        <rect key="frame" x="268" y="8" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="Cfd-sL-Va5"/>
+                                            <constraint firstAttribute="height" constant="44" id="JIh-zO-fo8"/>
+                                        </constraints>
+                                        <state key="normal" image="SwitchCamera">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="switchCameraButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KoM-5C-3nf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb1-P8-LJD">
+                                        <rect key="frame" x="0.0" y="-22" width="320" height="21"/>
+                                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="0yS-CV-lx9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="KOj-yD-7yZ" firstAttribute="top" secondItem="53S-6I-GEb" secondAttribute="top" constant="8" id="0f0-Bt-10C"/>
+                                    <constraint firstAttribute="bottom" secondItem="5fe-m1-Nen" secondAttribute="bottom" id="GsJ-7V-bCf"/>
+                                    <constraint firstItem="5fe-m1-Nen" firstAttribute="leading" secondItem="53S-6I-GEb" secondAttribute="leading" id="Jyj-AT-W2D"/>
+                                    <constraint firstAttribute="trailing" secondItem="5fe-m1-Nen" secondAttribute="trailing" id="OJ4-jW-duv"/>
+                                    <constraint firstItem="fIT-BQ-udY" firstAttribute="leading" secondItem="53S-6I-GEb" secondAttribute="leading" constant="8" id="a9h-Cx-vFO"/>
+                                    <constraint firstItem="qb1-P8-LJD" firstAttribute="top" secondItem="53S-6I-GEb" secondAttribute="top" constant="-22" id="cw9-kb-ghQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="KOj-yD-7yZ" secondAttribute="trailing" constant="8" id="fBN-wm-gFI"/>
+                                    <constraint firstAttribute="trailing" secondItem="qb1-P8-LJD" secondAttribute="trailing" id="m5l-Hm-9Sz"/>
+                                    <constraint firstItem="qb1-P8-LJD" firstAttribute="leading" secondItem="53S-6I-GEb" secondAttribute="leading" id="qUP-ru-Ab5"/>
+                                    <constraint firstItem="fIT-BQ-udY" firstAttribute="top" secondItem="53S-6I-GEb" secondAttribute="top" constant="8" id="xxe-8w-I9j"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="53S-6I-GEb" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="KLJ-VK-cBn"/>
+                            <constraint firstAttribute="trailing" secondItem="53S-6I-GEb" secondAttribute="trailing" id="Lan-7G-snx"/>
+                            <constraint firstItem="53S-6I-GEb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Qhc-e4-JRD"/>
+                            <constraint firstAttribute="bottom" secondItem="53S-6I-GEb" secondAttribute="bottom" id="srx-1G-7H3"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="cameraFlashButton" destination="fIT-BQ-udY" id="Y5l-X8-4dA"/>
+                        <outlet property="cameraSwitchButton" destination="KOj-yD-7yZ" id="0dW-x2-co6"/>
+                        <outlet property="overlayView" destination="53S-6I-GEb" id="Ypa-3Z-QVe"/>
+                        <outlet property="timerLabel" destination="qb1-P8-LJD" id="3Kr-yF-lAf"/>
+                        <outlet property="timerViewTopConstraint" destination="cw9-kb-ghQ" id="6J4-ce-iaI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155" y="403"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MenuButton" width="20" height="18"/>
+        <image name="OnOffButton_on" width="24" height="24"/>
+        <image name="SwitchCamera" width="44" height="44"/>
+        <image name="SwitchFlash_off" width="44" height="44"/>
+        <image name="VideoButton" width="21" height="17"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
