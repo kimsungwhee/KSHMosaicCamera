@@ -1,7 +1,5 @@
 # KSHMosaicCamera
-Mosaic camera sample
-
-This application will be implemented in the mosaic of a face recognition and facial
+KSHCameraMosaic is camera capture application,it can Face recognition and with a mosaic effect.
 ![capture](MosaicCamera.jpg "capture")
 ## Author
 
