@@ -1,5 +1,5 @@
 # KSHMosaicCamera
-###KSHCameraMosaic is camera capture application,it can Face recognition and with a mosaic effect.
+###KSHMosaicCamera is camera capture application,it can Face recognition and with a mosaic effect.
 
 ![capture](MosaicCamera.jpg "capture")
 ## Author
