@@ -2,7 +2,7 @@
 Mosaic camera sample
 
 This application will be implemented in the mosaic of a face recognition and facial
-![capture](MosaicCamera.PNG "capture")
+![capture](MosaicCamera.jpg "capture")
 ## Author
 
 Kimsungwhee, http://www.kimsungwhee.com
